@@ -19,7 +19,7 @@ let dx = [1, -1, 0, 0]
 let dy = [0, 0, -1, 1]
 var matrix = [[Int]](repeating: [Int](repeating:0, count: m), count: n)
 var visited = matrix
-var queue = [(Int, Int)]()
+var queue = [(Int, Int)]() //괄호가 머예여 ^_^?
 
 
 for _ in 0..<n{
@@ -30,7 +30,7 @@ visited[0][0] = 1
 queue.append((0,0))
 
 while !queue.isEmpty{
-    let (x,y) = queue.removeFirst()
+    let (x,y) = queue.removeFirst() //선언을 왜 저르케해여 ^_^?
     
     for i in 0..<4 {
         let nx = x+dx[i]
@@ -43,5 +43,3 @@ while !queue.isEmpty{
             
     }
 }
-
-print(matrix[n-1][m-1])
