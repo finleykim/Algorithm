@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C592914C284DCB92004D56D0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592914B284DCB92004D56D0 /* main.swift */; };
+		C5FBE1BF28532A460073E4EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592914B284DCB92004D56D0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +35,7 @@
 		C592915E284DDCB7004D56D0 /* 백준10866.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준10866.swift"; sourceTree = "<group>"; };
 		C592915F284DF669004D56D0 /* 백준 1021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준 1021.swift"; sourceTree = "<group>"; };
 		C5C8A7A32850A609006A90F4 /* 백준2178.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "백준2178.swift"; sourceTree = "<group>"; };
+		C5FBE1C22853344C0073E4EF /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = Algorithm/MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C592914B284DCB92004D56D0 /* main.swift */,
+				C5FBE1C22853344C0073E4EF /* MyPlayground.playground */,
 				C5929159284DDCB7004D56D0 /* success */,
 			);
 			path = algorithm;
@@ -148,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C592914C284DCB92004D56D0 /* main.swift in Sources */,
+				C5FBE1BF28532A460073E4EF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
