@@ -72,13 +72,10 @@ func baundaryCheck(_ x: Int, _ y: Int) -> Bool{
     return (0 <= x && x < n && 0 <= y && y < m) ? true : false
 }
 
-
-
 while !current.isEmpty{
     
-    
     let (x,y) = current.removeFirst()
-    
+    distance += 1
     
     
         for k in 0..<4{
@@ -92,19 +89,17 @@ while !current.isEmpty{
             tomatoBox[nextX][nextY] = 1
                 uncookedCount -= 1
             current.append((nextX,nextY))
-                
+                print(current)
             }
-       
     }
     
-    print("\(current)")
-    distance += 1
+
 }
 
 
 
-//if uncookedCount != 0{
-//    print(-1)
-//} else{
-//    print(distance)
-//}
+if uncookedCount != 0{
+    print(-1)
+} else{
+    print(distance)
+}
