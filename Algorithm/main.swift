@@ -8,41 +8,26 @@
 import Foundation
 
 
-
 let testCase = Int(readLine()!)!
-var lineArr = [[String]]()
-var arr = [String]()
-var result = [String]()
+var line = [[Int]]()
 
 
 for _ in 0..<testCase{
-    lineArr.append(readLine()!.split(separator: " ").map{String($0)})
+    line.append(readLine()!.split(separator: " ").map{Int(String($0))!})
 }
 
-for i in lineArr{
-    for j in i {
-        arr.append(j)
+for i in 1..<testCase{
+    for j in 0...i{
+        if j == 0{
+            line[i][j] += line[i-1][j]
+        } else if j == i{
+            line[i][j] += line[i-1][j-1]
+        } else {
+            line[i][j] += max(line[i-1][j-1],line[i-1][j])
+        }
     }
 }
-
-let letterCounts = arr.map { $0.count }
-print(letterCounts)
-
-
-for g in 0..<arr.count{
-        result.append(arr[letterCounts[g]])
-    }
-
-for n in result{
-    print(n)
-}
+print(line[testCase-1].max()!)
 
 
 
-
-
-/*
- 각각 chracter배열 만들어서 배열.count로 정렬하려고했는데 실패해씁니다...
- */
-
-//인덱스 값을 character의 count로 바꿔보자
