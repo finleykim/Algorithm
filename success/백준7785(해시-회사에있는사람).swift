@@ -7,17 +7,22 @@
 
 import Foundation
 
-var dictionary = [String: String]()
+
+var dictionary = [String: Bool]()
 let testCase = Int(readLine()!)!
-var result = [String]()
 
 for _ in 0..<testCase{
     let line = readLine()!.split(separator: " ").map{String($0)}
-    dictionary[line[0]] = line[1]
-}
-
-for i in dictionary{
-    if i.value == "enter"{
-        print(i.key)
+    if line[1] == "leave"{
+        dictionary[line[0]] = nil
+    } else{
+        dictionary[line[0]] = true
     }
 }
+
+let result = dictionary.keys.sorted(by: >)
+
+for i in result {
+    print(i)
+}
+
