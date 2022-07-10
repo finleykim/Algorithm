@@ -26,3 +26,6 @@ for i in result {
     print(i)
 }
 
+for i in 0..<arr.count where arr[i] > 0{
+    result.write(String(repeating: "\(i+1)\n", count: arr[i]))
+}
