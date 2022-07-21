@@ -28,6 +28,7 @@ func solution(_ s:String) -> Int {
                 index += 1
             }
             stringArr.append(unit)
+            print(stringArr)
         }
         
     }
