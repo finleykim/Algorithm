@@ -7,43 +7,40 @@
 
 import Foundation
 
-func solution(_ s:String) -> Int {
-    let initialString = s.lowercased()
-    var resultArr = [Int]() //결과값 저장 후 가장 작은 값 반환할 것
-    var stringArr = [String]() //각 단위로 나눈 배열
+func solution(_ numbers: [Int], _ hand: String) -> String{
     
-    //초기값배열화
-    var initialStringArr = [String]() //초기값배열
-    for i in s.unicodeScalars{
-        initialStringArr.append(String(i))
-    }
-    let maxUnit = initialStringArr.count / 2 //나눌 수 있는 최대단위 8
+    var result = [Character]
+    var left = "-10"
+    var right = "10"
     
-    for i in 1...maxUnit{ //유닛최대단위 1 2 3 4
-        var index = 0
-        for _ in 0..<i/maxUnit{ //횟수 4
-            var unit = ""
-            while index <= i{
-                unit += initialStringArr[index]
-                index += 1
+    for i in 0..<numbers.count{
+        switch numbers[i]{
+        case 1 || 4 || 7 :
+            result.append("L")
+            left == numbers[i]
+        case 3 || 6 || 9 :
+            result.append("R")
+            right == numbers[i]
+        case 2 || 5 || 8 || 0 && i != 0 :
+            if numbers[i] - left > right - numbers[i]{
+                result.append("R")
+                right == numbers[i]
+            } else if numbers[i] - left < right - numbers[i]{
+                result.append("L")
+                left == numbers[i]
+            } else if numbers[i] - left == right - numbers[i] && hand == "right"{
+                result.append("R")
+                right == numbers[i]
+            } else if numbers[i] - left == right - numbers[i] && hand == "left"{
+                result.append("L")
+                left == numbers[i]
             }
-            stringArr.append(unit)
-            print(stringArr)
+        default: result.append("e")
         }
-        
     }
-   
-    
-
+        
     
     
     
-    
-    
-    
-    return 0
+    return ""
 }
-
-solution("aabbaccc")
-
-//https://velog.io/@focusonmx/프로그래머스-신규-아이디-추천
