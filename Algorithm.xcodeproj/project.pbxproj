@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5C5D8B2288D370300B4E053 /* 프로그래머스(문자열압축).swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C5D8B1288D370300B4E053 /* 프로그래머스(문자열압축).swift */; };
 		C5CA552B2876C8A300EA4EAE /* hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA552A2876C8A300EA4EAE /* hash.swift */; };
 		C5FBE1BF28532A460073E4EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592914B284DCB92004D56D0 /* main.swift */; };
 /* End PBXBuildFile section */
@@ -192,7 +191,6 @@
 			files = (
 				C5FBE1BF28532A460073E4EF /* main.swift in Sources */,
 				C5CA552B2876C8A300EA4EAE /* hash.swift in Sources */,
-				C5C5D8B2288D370300B4E053 /* 프로그래머스(문자열압축).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,5 +4,5 @@
 
 import Foundation
 
-let asd = "vaefg eww"
-print(asd.prefix(through:"g"))
+let asd = -128
+print(asd-(asd*2))
