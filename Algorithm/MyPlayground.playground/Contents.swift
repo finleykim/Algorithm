@@ -5,4 +5,4 @@
 import Foundation
 
 let asd = -128
-print(asd-(asd*2))
+print(asd.magnitude)
